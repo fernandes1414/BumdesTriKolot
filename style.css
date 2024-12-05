@@ -1,0 +1,117 @@
+* {
+  font-family: poppins;
+}
+/* Styling untuk logo */
+.logo {
+  width: 120px; /* Atur lebar logo */
+  height: auto; /* Sesuaikan tinggi secara proporsional */
+  margin-right: 10px; /* Tambahkan jarak antar teks */
+}
+
+/* Penyesuaian header */
+header {
+  background-color: #37517e;
+}
+header h1 {
+  display: flex;
+  align-items: center; /* Sejajarkan teks dan logo */
+  margin: 0;
+}
+
+.nav-link {
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #ffd700; /* Mengubah warna saat hover */
+}
+
+/* Background untuk banner */
+.banner {
+  background: url("img/bg.jpeg") center/cover no-repeat;
+  height: 100vh; /* Ukuran penuh layar */
+  display: flex;
+  align-items: center; /* Teks di tengah vertikal */
+  justify-content: center; /* Teks di tengah horizontal */
+}
+
+/* Overlay semi-transparan */
+.banner .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Warna gelap transparan */
+  z-index: 1;
+}
+
+/* Posisi teks dan elemen lainnya */
+.banner .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Styling teks judul */
+.banner h2 {
+  font-size: 2.5 rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Styling teks deskripsi */
+.banner p {
+  font-size: 1.25rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+footer {
+  background-color: #f8f9fa; /* Warna latar belakang footer */
+}
+
+footer h5 {
+  font-weight: bold; /* Berat font untuk judul */
+}
+
+.social-icons a {
+  width: 40px; /* Ukuran ikon */
+  height: 40px; /* Ukuran ikon */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: white; /* Warna ikon */
+  background-color: #007bff; /* Warna latar belakang ikon */
+}
+
+.social-icons a:hover {
+  background-color: #0056b3; /* Warna latar belakang saat hover */
+}
+
+footer p {
+  margin: 0; /* Menghilangkan margin default untuk paragraf */
+}
+
+.typing-effect {
+  border-right: 2px solid white; /* Garis kursor */
+  white-space: nowrap; /* Mencegah teks membungkus */
+  overflow: hidden; /* Sembunyikan teks yang berlebihan */
+  animation: blink-caret 0.75s step-end infinite; /* Efek kedip kursor */
+  display: inline-block; /* Membuat elemen tetap sebaris */
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent; /* Tanpa warna */
+  }
+  50% {
+    border-color: white; /* Warna garis kursor */
+  }
+}
+
+@keyframes typing {
+  from {
+    height: 0; /* Mulai dari tinggi 0 */
+  }
+  to {
+    height: auto; /* Tinggi otomatis */
+  }
+}
